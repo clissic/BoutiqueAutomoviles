@@ -53,7 +53,7 @@
   background: white;
   /* box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125); */
   height: 100px;
-  margin: 12vh auto 12vh auto;
+  margin: 2.5rem auto 2.5rem auto;
   overflow: hidden;
   position: relative;
   width: 90%;
@@ -94,3 +94,90 @@
 }
 
 /* FIN CARROUSEL INFINITO */
+
+.featured-v {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 10vw;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.featured-v a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.car-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.car-card:hover {
+    transform: translateY(-10px);
+}
+
+.car-photo {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.car-info {
+    padding: 15px;
+    text-align: center;
+}
+
+.car-brand {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.car-model {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.car-status {
+    color: white !important;
+    padding: 0 .5rem 0 .5rem;
+    border-radius: 10px;
+}
+
+.new-true {
+    background-color: green;
+}
+
+.new-false {
+    background-color: orange;
+}
+
+.car-status, .car-km, .car-price {
+    font-size: 1em;
+    color: #777;
+    margin-bottom: 5px;
+}
+
+.car-price {
+    font-size: 1.3em;
+    color: #1E88E5;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.index-sub-title {
+    padding: 5px 10px 5px 10px;
+    background-color: #212529;
+    color: white;
+    width: fit-content;
+}

@@ -1,0 +1,182 @@
+[
+    {
+        "id": "0",
+        "featured": true,
+        "brand": "Fiat",
+        "model": "Strada",
+        "year": "2012",
+        "new": false,
+        "color": "blanco",
+        "km": "55000",
+        "engine": "1.6",
+        "imgs": [
+            "./assets/img/cars/0/img1.webp",
+            "./assets/img/cars/0/img2.webp",
+            "./assets/img/cars/0/img3.webp",
+            "./assets/img/cars/0/img4.webp",
+            "./assets/img/cars/0/img5.webp"
+        ]
+    },
+    {
+        "id": "1",
+        "featured": false,
+        "brand": "Volkswagen",
+        "model": "Gol",
+        "year": "2016",
+        "new": false,
+        "color": "rojo",
+        "km": "105000",
+        "engine": "1.6",
+        "imgs": [
+            "./assets/img/cars/1/img1.webp",
+            "./assets/img/cars/1/img2.webp",
+            "./assets/img/cars/1/img3.webp",
+            "./assets/img/cars/1/img4.webp",
+            "./assets/img/cars/1/img5.webp"
+        ]
+    },
+    {
+        "id": "2",
+        "featured": true,
+        "brand": "Chevrolet",
+        "model": "Onix Joy",
+        "year": "2014",
+        "new": false,
+        "color": "blanco",
+        "km": "79500",
+        "engine": "1.0",
+        "imgs": [
+            "./assets/img/cars/2/img1.webp",
+            "./assets/img/cars/2/img2.webp",
+            "./assets/img/cars/2/img3.webp",
+            "./assets/img/cars/2/img4.webp",
+            "./assets/img/cars/2/img5.webp"
+        ]
+    },
+    {
+        "id": "3",
+        "featured": false,
+        "brand": "Chevrolet",
+        "model": "S10",
+        "year": "2011",
+        "new": false,
+        "color": "blanco",
+        "km": "180500",
+        "engine": "2.5",
+        "imgs": [
+            "./assets/img/cars/3/img1.webp",
+            "./assets/img/cars/3/img2.webp",
+            "./assets/img/cars/3/img3.webp",
+            "./assets/img/cars/3/img4.webp",
+            "./assets/img/cars/3/img5.webp"
+        ]
+    },
+    {
+        "id": "4",
+        "featured": true,
+        "brand": "BYD",
+        "model": "Seagul",
+        "year": "2024",
+        "new": false,
+        "color": "negro",
+        "km": "15000",
+        "engine": "Eléctrico",
+        "imgs": [
+            "./assets/img/cars/4/img1.webp",
+            "./assets/img/cars/4/img2.webp",
+            "./assets/img/cars/4/img3.webp",
+            "./assets/img/cars/4/img4.webp",
+            "./assets/img/cars/4/img5.webp"
+        ]
+    },
+    {
+        "id": "5",
+        "featured": false,
+        "brand": "Chery",
+        "model": "Tiggo",
+        "year": "2014",
+        "new": false,
+        "color": "rojo",
+        "km": "94500",
+        "engine": "1.0",
+        "imgs": [
+            "./assets/img/cars/5/img1.webp",
+            "./assets/img/cars/5/img2.webp",
+            "./assets/img/cars/5/img3.webp",
+            "./assets/img/cars/5/img4.webp",
+            "./assets/img/cars/5/img5.webp"
+        ]
+    },
+    {
+        "id": "6",
+        "featured": true,
+        "brand": "Volkswagen",
+        "model": "Golf",
+        "year": "2024",
+        "new": true,
+        "color": "rojo",
+        "km": "0",
+        "engine": "1.0",
+        "imgs": [
+            "./assets/img/cars/6/img1.webp",
+            "./assets/img/cars/6/img2.webp",
+            "./assets/img/cars/6/img3.webp",
+            "./assets/img/cars/6/img4.webp",
+            "./assets/img/cars/6/img5.webp"
+        ]
+    },
+    {
+        "id": "7",
+        "featured": false,
+        "brand": "Peugeot",
+        "model": "208",
+        "year": "2024",
+        "new": true,
+        "color": "gris",
+        "km": "0",
+        "engine": "1.6",
+        "imgs": [
+            "./assets/img/cars/7/img1.webp",
+            "./assets/img/cars/7/img2.webp",
+            "./assets/img/cars/7/img3.webp",
+            "./assets/img/cars/7/img4.webp",
+            "./assets/img/cars/7/img5.webp"
+        ]
+    },
+    {
+        "id": "8",
+        "featured": false,
+        "brand": "Renault",
+        "model": "Sandero R.S.",
+        "year": "2018",
+        "new": false,
+        "color": "negro",
+        "km": "64500",
+        "engine": "2.0",
+        "imgs": [
+            "./assets/img/cars/8/img1.webp",
+            "./assets/img/cars/8/img2.webp",
+            "./assets/img/cars/8/img3.webp",
+            "./assets/img/cars/8/img4.webp",
+            "./assets/img/cars/8/img5.webp"
+        ]
+    },
+    {
+        "id": "9",
+        "featured": false,
+        "brand": "Nissan",
+        "model": "Sentra",
+        "year": "2014",
+        "new": false,
+        "color": "gris",
+        "km": "46200",
+        "engine": "1.5",
+        "imgs": [
+            "./assets/img/cars/9/img1.webp",
+            "./assets/img/cars/9/img2.webp",
+            "./assets/img/cars/9/img3.webp",
+            "./assets/img/cars/9/img4.webp",
+            "./assets/img/cars/9/img5.webp"
+        ]
+    }
+]
