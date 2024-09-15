@@ -157,16 +157,16 @@
 
 .car-status {
     color: white !important;
-    padding: 0 .5rem 0 .5rem;
-    border-radius: 10px;
+    padding: .2rem .7rem .2rem .7rem;
+    border-radius: 5px;
 }
 
 .new-true {
-    background-color: rgb(0, 0, 170);
+    background-color: #008f0c;
 }
 
 .new-false {
-    background-color: rgb(201, 130, 0);
+    background-color: #565656;
 }
 
 .car-status, .car-km, .car-price {
@@ -234,4 +234,55 @@
     background-color: white;
     color: black;
     transition: all .2s;
+}
+
+.services-card-div {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1rem;
+}
+
+.services-card-div i {
+    font-size: xx-large;
+}
+
+.logo-header {
+    width: 25%;
+}
+
+.logo-footer {
+    width: 50%;
+}
+
+footer {
+    padding: 5vh 5vw 5vh 5vw;
+    background-color: #212529;
+}
+
+.dropdown-menu {
+    min-width: 0;
+    border-radius: 0;
+}
+
+.dropdown-item:active {
+    background-color: black;
+}
+
+.designer-signature {
+    margin-top: 1vw;
+    display: flex;
+    flex-direction: row;
+    column-gap: 1vw;
+    justify-content: right;
+    align-items: center;
+}
+
+.designer-signature a:hover {
+    text-decoration: underline;
+}
+
+.jpc-logo {
+    width: 10%;
+    max-width: 5%;
+    filter: invert(1);
 }
