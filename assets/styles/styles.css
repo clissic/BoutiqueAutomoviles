@@ -113,7 +113,7 @@
     align-items: center;
 }
 
-.featured-v a {
+.no-format-a {
     text-decoration: none;
     color: inherit;
 }
@@ -187,4 +187,51 @@
     background-color: #212529;
     color: white;
     width: fit-content;
+}
+
+.contact-div {
+    background-image: radial-gradient(circle, #555657, #505253, #4b4d4f, #46494b, #414547, #3c4143, #383c40, #34383c, #2f3337, #2a2e32, #262a2e, #212529);
+    padding: 15vh 10vw 15vh 10vw;
+}
+
+.contact-div-btn {
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    padding: 10px 15px 10px 15px;
+    font-size: large;
+    font-weight: 600;
+    transition: all .2s;
+}
+
+.contact-div-btn:hover {
+    background-color: rgb(75, 75, 75);
+    color: white;
+    transition: all .2s;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.test-drive-div {
+    background-image: radial-gradient(circle, #ffffff, #fafafa, #f6f6f6, #f1f1f1, #ededed, #e8e8e8, #e4e4e4, #dfdfdf, #d9d9d9, #d4d4d4, #cecece, #c9c9c9);
+    padding: 15vh 10vw 15vh 10vw;
+    color: black;
+}
+
+.test-drive-div-btn {
+    background-color: rgb(75, 75, 75);
+    color: white;
+    border-radius: 15px;
+    padding: 10px 15px 10px 15px;
+    font-size: large;
+    font-weight: 600;
+    transition: all .2s;
+}
+
+.test-drive-div-btn:hover {
+    background-color: white;
+    color: black;
+    transition: all .2s;
 }
