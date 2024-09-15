@@ -95,6 +95,14 @@
 
 /* FIN CARROUSEL INFINITO */
 
+.featured-cars-div {
+    margin: 10vh 0 10vh 0;
+}
+
+.featured-bikes-div {
+    margin: 0 0 10vh 0;
+}
+
 .featured-v {
     font-family: 'Arial', sans-serif;
     display: flex;
@@ -103,7 +111,6 @@
     row-gap: 10vw;
     justify-content: space-around;
     align-items: center;
-    margin-top: 2rem;
 }
 
 .featured-v a {
@@ -155,11 +162,11 @@
 }
 
 .new-true {
-    background-color: green;
+    background-color: rgb(0, 0, 170);
 }
 
 .new-false {
-    background-color: orange;
+    background-color: rgb(201, 130, 0);
 }
 
 .car-status, .car-km, .car-price {

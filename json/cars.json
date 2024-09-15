@@ -15,7 +15,8 @@
             "./assets/img/cars/0/img3.webp",
             "./assets/img/cars/0/img4.webp",
             "./assets/img/cars/0/img5.webp"
-        ]
+        ],
+        "price": "U$D 12,500"
     },
     {
         "id": "1",
@@ -33,7 +34,8 @@
             "./assets/img/cars/1/img3.webp",
             "./assets/img/cars/1/img4.webp",
             "./assets/img/cars/1/img5.webp"
-        ]
+        ],
+        "price": "U$D 8,300"
     },
     {
         "id": "2",
@@ -51,7 +53,8 @@
             "./assets/img/cars/2/img3.webp",
             "./assets/img/cars/2/img4.webp",
             "./assets/img/cars/2/img5.webp"
-        ]
+        ],
+        "price": "U$D 7,500"
     },
     {
         "id": "3",
@@ -69,7 +72,8 @@
             "./assets/img/cars/3/img3.webp",
             "./assets/img/cars/3/img4.webp",
             "./assets/img/cars/3/img5.webp"
-        ]
+        ],
+        "price": "U$D 15,000"
     },
     {
         "id": "4",
@@ -87,7 +91,8 @@
             "./assets/img/cars/4/img3.webp",
             "./assets/img/cars/4/img4.webp",
             "./assets/img/cars/4/img5.webp"
-        ]
+        ],
+        "price": "U$D 22,000"
     },
     {
         "id": "5",
@@ -105,7 +110,8 @@
             "./assets/img/cars/5/img3.webp",
             "./assets/img/cars/5/img4.webp",
             "./assets/img/cars/5/img5.webp"
-        ]
+        ],
+        "price": "U$D 9,600"
     },
     {
         "id": "6",
@@ -123,7 +129,8 @@
             "./assets/img/cars/6/img3.webp",
             "./assets/img/cars/6/img4.webp",
             "./assets/img/cars/6/img5.webp"
-        ]
+        ],
+        "price": "U$D 27,500"
     },
     {
         "id": "7",
@@ -141,7 +148,8 @@
             "./assets/img/cars/7/img3.webp",
             "./assets/img/cars/7/img4.webp",
             "./assets/img/cars/7/img5.webp"
-        ]
+        ],
+        "price": "U$D 21,000"
     },
     {
         "id": "8",
@@ -159,7 +167,8 @@
             "./assets/img/cars/8/img3.webp",
             "./assets/img/cars/8/img4.webp",
             "./assets/img/cars/8/img5.webp"
-        ]
+        ],
+        "price": "U$D 13,800"
     },
     {
         "id": "9",
@@ -177,6 +186,7 @@
             "./assets/img/cars/9/img3.webp",
             "./assets/img/cars/9/img4.webp",
             "./assets/img/cars/9/img5.webp"
-        ]
+        ],
+        "price": "U$D 10,500"
     }
 ]

@@ -1,0 +1,192 @@
+[
+    {
+        "id": "0",
+        "featured": true,
+        "brand": "Honda",
+        "model": "CBR 500R",
+        "year": "2023",
+        "new": true,
+        "color": "rojo",
+        "km": "0",
+        "engine": "471 cc",
+        "imgs": [
+            "./assets/img/bikes/0/img1.webp",
+            "./assets/img/bikes/0/img2.webp",
+            "./assets/img/bikes/0/img3.webp",
+            "./assets/img/bikes/0/img4.webp",
+            "./assets/img/bikes/0/img5.webp"
+        ],
+        "price": "U$D 8,900"
+    },
+    {
+        "id": "1",
+        "featured": false,
+        "brand": "Yamaha",
+        "model": "MT-07",
+        "year": "2021",
+        "new": false,
+        "color": "negro",
+        "km": "12000",
+        "engine": "689 cc",
+        "imgs": [
+            "./assets/img/bikes/1/img1.webp",
+            "./assets/img/bikes/1/img2.webp",
+            "./assets/img/bikes/1/img3.webp",
+            "./assets/img/bikes/1/img4.webp",
+            "./assets/img/bikes/1/img5.webp"
+        ],
+        "price": "U$D 7,300"
+    },
+    {
+        "id": "2",
+        "featured": true,
+        "brand": "Kawasaki",
+        "model": "Ninja 400",
+        "year": "2024",
+        "new": true,
+        "color": "verde",
+        "km": "0",
+        "engine": "399 cc",
+        "imgs": [
+            "./assets/img/bikes/2/img1.webp",
+            "./assets/img/bikes/2/img2.webp",
+            "./assets/img/bikes/2/img3.webp",
+            "./assets/img/bikes/2/img4.webp",
+            "./assets/img/bikes/2/img5.webp"
+        ],
+        "price": "U$D 6,700"
+    },
+    {
+        "id": "3",
+        "featured": false,
+        "brand": "Suzuki",
+        "model": "GSX-S750",
+        "year": "2019",
+        "new": false,
+        "color": "azul",
+        "km": "20000",
+        "engine": "749 cc",
+        "imgs": [
+            "./assets/img/bikes/3/img1.webp",
+            "./assets/img/bikes/3/img2.webp",
+            "./assets/img/bikes/3/img3.webp",
+            "./assets/img/bikes/3/img4.webp",
+            "./assets/img/bikes/3/img5.webp"
+        ],
+        "price": "U$D 6,200"
+    },
+    {
+        "id": "4",
+        "featured": false,
+        "brand": "BMW",
+        "model": "G 310 R",
+        "year": "2024",
+        "new": true,
+        "color": "blanco",
+        "km": "0",
+        "engine": "313 cc",
+        "imgs": [
+            "./assets/img/bikes/4/img1.webp",
+            "./assets/img/bikes/4/img2.webp",
+            "./assets/img/bikes/4/img3.webp",
+            "./assets/img/bikes/4/img4.webp",
+            "./assets/img/bikes/4/img5.webp"
+        ],
+        "price": "U$D 5,500"
+    },
+    {
+        "id": "5",
+        "featured": false,
+        "brand": "Ducati",
+        "model": "Scrambler Icon",
+        "year": "2020",
+        "new": false,
+        "color": "amarillo",
+        "km": "8500",
+        "engine": "803 cc",
+        "imgs": [
+            "./assets/img/bikes/5/img1.webp",
+            "./assets/img/bikes/5/img2.webp",
+            "./assets/img/bikes/5/img3.webp",
+            "./assets/img/bikes/5/img4.webp",
+            "./assets/img/bikes/5/img5.webp"
+        ],
+        "price": "U$D 9,800"
+    },
+    {
+        "id": "6",
+        "featured": true,
+        "brand": "Triumph",
+        "model": "Street Triple",
+        "year": "2022",
+        "new": false,
+        "color": "negro",
+        "km": "15000",
+        "engine": "765 cc",
+        "imgs": [
+            "./assets/img/bikes/6/img1.webp",
+            "./assets/img/bikes/6/img2.webp",
+            "./assets/img/bikes/6/img3.webp",
+            "./assets/img/bikes/6/img4.webp",
+            "./assets/img/bikes/6/img5.webp"
+        ],
+        "price": "U$D 10,300"
+    },
+    {
+        "id": "7",
+        "featured": false,
+        "brand": "Harley-Davidson",
+        "model": "Iron 883",
+        "year": "2018",
+        "new": false,
+        "color": "gris",
+        "km": "18000",
+        "engine": "883 cc",
+        "imgs": [
+            "./assets/img/bikes/7/img1.webp",
+            "./assets/img/bikes/7/img2.webp",
+            "./assets/img/bikes/7/img3.webp",
+            "./assets/img/bikes/7/img4.webp",
+            "./assets/img/bikes/7/img5.webp"
+        ],
+        "price": "U$D 12,000"
+    },
+    {
+        "id": "8",
+        "featured": false,
+        "brand": "Royal Enfield",
+        "model": "Himalayan",
+        "year": "2021",
+        "new": false,
+        "color": "gris",
+        "km": "16000",
+        "engine": "411 cc",
+        "imgs": [
+            "./assets/img/bikes/8/img1.webp",
+            "./assets/img/bikes/8/img2.webp",
+            "./assets/img/bikes/8/img3.webp",
+            "./assets/img/bikes/8/img4.webp",
+            "./assets/img/bikes/8/img5.webp"
+        ],
+        "price": "U$D 5,800"
+    },
+    {
+        "id": "9",
+        "featured": false,
+        "brand": "KTM",
+        "model": "Duke 390",
+        "year": "2022",
+        "new": false,
+        "color": "naranja",
+        "km": "5000",
+        "engine": "373 cc",
+        "imgs": [
+            "./assets/img/bikes/9/img1.webp",
+            "./assets/img/bikes/9/img2.webp",
+            "./assets/img/bikes/9/img3.webp",
+            "./assets/img/bikes/9/img4.webp",
+            "./assets/img/bikes/9/img5.webp"
+        ],
+        "price": "U$D 6,400"
+    }
+]
