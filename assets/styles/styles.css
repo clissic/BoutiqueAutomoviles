@@ -242,9 +242,8 @@
     column-gap: 1rem;
 }
 
-.services-card-div h6 {
-    margin: 0;
-}
+/* .services-card p {
+} */
 
 .services-card-div i {
     font-size: xx-large;
@@ -273,7 +272,6 @@ footer {
 }
 
 .designer-signature {
-    margin-top: 1vw;
     display: flex;
     flex-direction: row;
     column-gap: 1vw;
@@ -360,4 +358,8 @@ footer {
 .body-parallax h2 {
     font-size: 6rem;
     margin: 0;
+}
+
+.characteristics-card p {
+    font-weight: 700;
 }
