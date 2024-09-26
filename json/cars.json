@@ -25,7 +25,7 @@
     },
     {
         "id": "1",
-        "featured": false,
+        "featured": true,
         "brand": "Chevrolet",
         "model": "Agile",
         "year": "2013",
@@ -97,7 +97,7 @@
     },
     {
         "id": "4",
-        "featured": true,
+        "featured": false,
         "brand": "BYD",
         "model": "Seagul",
         "year": "2024",
@@ -145,7 +145,7 @@
     },
     {
         "id": "6",
-        "featured": true,
+        "featured": false,
         "brand": "Volkswagen",
         "model": "Golf",
         "year": "2024",

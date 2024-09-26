@@ -1,15 +1,56 @@
-document.getElementById
+const featuredCarsContainer = document.getElementById("featured-cars")
+const carsJSON = './json/cars.json'
 
-fetch('./json/cars.json')
-  .then(response => {
-    if (!response.ok) {
-      throw new Error('Network response was not ok ' + response.statusText);
+async function fetchCars(URL) {
+  try {
+    const response = await fetch(URL)
+
+    if(!response.ok) {
+      throw new Error(`Error: ${response.status} - ${response.statusText}`);
     }
-    return response.json();
-  })
-  .then(data => {
-    console.log(data);
-  })
-  .catch(error => {
-    console.error('There was a problem with the fetch operation:', error);
-  });
+
+    const data = await response.json();
+    const cars = data;
+
+    function condition(x) {
+      if (x === true) {
+        return "Nuevo"
+      } else {
+        return "Usado"
+      }
+    }
+
+    cars.forEach(car => {
+      if (car.featured === true) {
+        const carHTML = `
+          <a id="${car.id}" onclick="localStorage.setItem('vehicleID', this.id);" href="./pages/vehicle.html" class="car-card no-format-a">
+                <img src="${car.imgs[0]}" alt="Foto del auto" class="car-photo">
+                <div class="car-info">
+                    <div class="d-flex f-row align-items-center justify-content-center gap-3">
+                        <h2 class="car-brand">${car.brand}</h2>
+                        <h3 class="car-model">${car.model}</h3>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <p class="car-model">${car.year}</p>
+                        <p class="car-km">${car.km} KM</p>
+                        <p class="car-status new-${car.new}">${condition(car.new)}</p>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <p class="car-price">${car.price}</p>
+                    </div>
+                </div>
+            </a>
+        `;
+        featuredCarsContainer.innerHTML += carHTML; 
+      }
+    }
+  )
+  } catch (error) {
+    console.error("Ocurrio un error en el FETCH de los datos:", error);
+  }
+}
+
+document.addEventListener("DOMContentLoaded", async () => {
+  await fetchCars(carsJSON)
+})
