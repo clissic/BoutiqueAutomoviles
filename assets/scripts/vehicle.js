@@ -1,7 +1,7 @@
 const vehicleID = localStorage.getItem("vehicleID")
 
 const vehicleBodyContainer = document.getElementById("vehicle-body")
-const carsJSON = 'https://raw.githubusercontent.com/clissic/boutiqueAutomovilesJSON/refs/heads/master/cars.json'
+const carsJSON = 'https://raw.githubusercontent.com/clissic/boutiqueAutomovilesJSON/refs/heads/master/vehicles.json'
 
 async function fetchCars(URL) {
   try {
