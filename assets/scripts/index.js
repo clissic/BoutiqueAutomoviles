@@ -1,4 +1,5 @@
-const featuredCarsContainer = document.getElementById("featured-cars")
+const featuredCarsContainer = document.getElementById("featured-cars");
+const featuredBikesContainer = document.getElementById("featured-bikes");
 const carsJSON = 'https://raw.githubusercontent.com/clissic/boutiqueAutomovilesJSON/refs/heads/master/vehicles.json'
 
 async function fetchCars(URL) {
@@ -21,7 +22,7 @@ async function fetchCars(URL) {
     }
 
     cars.forEach(car => {
-      if (car.featured === true) {
+      if (car.featured === true && car.category === "autos") {
         const carHTML = `
           <a id="${car.id}" onclick="localStorage.setItem('vehicleID', this.id);" href="./pages/vehicle.html" class="car-card no-format-a">
                 <img src="${car.imgs[0]}" alt="Foto del auto" class="car-photo">
@@ -43,6 +44,30 @@ async function fetchCars(URL) {
             </a>
         `;
         featuredCarsContainer.innerHTML += carHTML; 
+      }
+
+      if (car.featured === true && car.category === "motos") {
+        const bikeHTML = `
+          <a id="${car.id}" onclick="localStorage.setItem('vehicleID', this.id);" href="./pages/vehicle.html" class="car-card no-format-a">
+                <img src="${car.imgs[0]}" alt="Foto del auto" class="car-photo">
+                <div class="car-info">
+                    <div class="d-flex f-row align-items-center justify-content-center gap-3">
+                        <h2 class="car-brand">${car.brand}</h2>
+                        <h3 class="car-model">${car.model}</h3>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <p class="car-model">${car.year}</p>
+                        <p class="car-km">${car.km} KM</p>
+                        <p class="car-status new-${car.new}">${condition(car.new)}</p>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <p class="car-price">${car.price}</p>
+                    </div>
+                </div>
+            </a>
+        `;
+        featuredBikesContainer.innerHTML += bikeHTML;
       }
     }
   )
