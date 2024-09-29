@@ -57,17 +57,27 @@ async function renderVehicles(vehiclesArrayParam) {
           <a id="${vehicle.id}" onclick="localStorage.setItem('vehicleID', this.id);" href="./vehicle.html" class="vehicle-card no-format-a">
               <img src=".${vehicle.imgs[0]}" alt="Foto del auto" class="car-photo">
               <div class="car-info">
-                  <div class="d-flex f-row align-items-center justify-content-center gap-3">
-                      <h3 class="car-brand">${vehicle.brand}</h3>
-                      <h4 class="car-model">${vehicle.model}</h4>
+                  <div class="d-flex gap-2 justify-content-start">
+                      <h3 class="m-0">${vehicle.brand}</h3>
+                      <h3 class="m-0">${vehicle.model}</h3>
                   </div>
-                  <div class="d-flex justify-content-between align-items-center">
-                      <p class="car-model">${vehicle.year}</p>
-                      <p class="car-km">${vehicle.km} KM</p>
-                      <p class="car-status condition-${vehicle.condition}">${vehicle.condition}</p>
+                  <div class="justify-content-between align-items-center">
+                      <div class="mt-2 d-flex gap-2 justify-content-start">
+                          <p class="m-0">${vehicle.version}</p>
+                          <p class="m-0">|</p>
+                          <p class="m-0">${vehicle.transmition}</p>
+                          <p class="m-0">|</p>
+                          <p class="m-0">${vehicle.color}</p>
+                      </div>
+                      <div class="d-flex gap-2 justify-content-start">
+                          <p class="m-0">${vehicle.year}</p>
+                          <p class="m-0">|</p>
+                          <p class="m-0">${vehicle.km} KM</p>
+                      </div>
                   </div>
-                  <hr>
-                  <div class="d-flex justify-content-center align-items-center">
+                  <hr class="my-1">
+                  <div class="d-flex justify-content-around align-items-center">
+                      <p class="m-0 car-status condition-${vehicle.condition}">${vehicle.condition}</p>
                       <p class="car-price">${vehicle.price}</p>
                   </div>
               </div>
