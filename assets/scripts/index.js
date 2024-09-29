@@ -34,7 +34,7 @@ async function fetchCars(URL) {
                     <div class="d-flex justify-content-between align-items-center">
                         <p class="car-model">${car.year}</p>
                         <p class="car-km">${car.km} KM</p>
-                        <p class="car-status new-${car.new}">${condition(car.new)}</p>
+                        <p class="car-status condition-${car.condition}">${car.condition}</p>
                     </div>
                     <hr>
                     <div class="d-flex justify-content-center align-items-center">
@@ -58,7 +58,7 @@ async function fetchCars(URL) {
                     <div class="d-flex justify-content-between align-items-center">
                         <p class="car-model">${car.year}</p>
                         <p class="car-km">${car.km} KM</p>
-                        <p class="car-status new-${car.new}">${condition(car.new)}</p>
+                        <p class="car-status condition-${car.condition}">${car.condition}</p>
                     </div>
                     <hr>
                     <div class="d-flex justify-content-center align-items-center">
