@@ -15,13 +15,6 @@ async function fetchCars(URL) {
     const cars = data;
     const vehicle = cars[vehicleID]
 
-    function condition(x) {
-      if (x === true) {
-        return "Nuevo"
-      } else {
-        return "Usado"
-      }
-    }
         const vehicleHTML = `
         <div class="body-parallax" style="background-image: url('.${vehicle.imgs[0]}');"><h4>${vehicle.brand}</h4><h2>${vehicle.model}</h2></div>
         <div class="container mt-4 mb-5 d-flex flex-column flex-md-row gap-5 justify-content-center">
@@ -47,7 +40,7 @@ async function fetchCars(URL) {
                             <i class="fa-solid fa-hand-holding-medical"></i>
                             <h6>CONDICIÓN:</h6>
                         </div>
-                        <p class="text-end text-md-center text-lg-center h4">${condition(vehicle.new)}</p>
+                        <p class="text-end text-md-center text-lg-center h4">${vehicle.condition}</p>
                     </div>
                     <div class="characteristics-card mt-4 col-lg-4 col-md-6 col-12">
                         <div class="services-card-div d-flex align-items-center">
