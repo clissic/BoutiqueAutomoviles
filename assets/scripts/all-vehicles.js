@@ -8,6 +8,9 @@ if (vehiclesCategory === "autos") {
   navbarMotos.classList.add("active")
 }
 
+// ALL VEHICLES DIV
+const allVehiclesDiv = document.getElementById("vehicles-body");
+
 // FILTER CONTAINERS
 const allFiltersContainer = document.getElementById("filters-div");
 const filterBrandContainer = document.getElementById("filter-brand");
@@ -57,19 +60,19 @@ async function renderVehicles(vehiclesArrayParam) {
           <a id="${vehicle.id}" onclick="localStorage.setItem('vehicleID', this.id);" href="./vehicle.html" class="vehicle-card no-format-a">
               <img src=".${vehicle.imgs[0]}" alt="Foto del auto" class="car-photo">
               <div class="car-info">
-                  <div class="d-flex gap-2 justify-content-start">
-                      <h3 class="m-0">${vehicle.brand}</h3>
-                      <h3 class="m-0">${vehicle.model}</h3>
+                  <div class="d-flex flex-wrap gap-1 justify-content-start">
+                      <h4 class="m-0">${vehicle.brand}</h4>
+                      <h4 class="m-0">${vehicle.model}</h4>
                   </div>
                   <div class="justify-content-between align-items-center">
-                      <div class="mt-2 d-flex gap-2 justify-content-start">
+                      <div class="mt-2 d-flex flex-wrap gap-1 justify-content-start">
                           <p class="m-0">${vehicle.version}</p>
                           <p class="m-0">|</p>
                           <p class="m-0">${vehicle.transmition}</p>
                           <p class="m-0">|</p>
                           <p class="m-0">${vehicle.color}</p>
                       </div>
-                      <div class="d-flex gap-2 justify-content-start">
+                      <div class="d-flex gap-1 flex-wrap justify-content-start">
                           <p class="m-0">${vehicle.year}</p>
                           <p class="m-0">|</p>
                           <p class="m-0">${vehicle.km} KM</p>
@@ -127,7 +130,7 @@ async function renderFilters(vehiclesArrayParam) {
     const engineFilter = `
                     <div onclick="applyFilter('${engine}', 'engine');">
                         <input type="radio" name="motor" id="input-${engine}" value="${engine}">
-                        <label for="${engine}">${engine}</label>
+                        <label for="${engine}">${engine}cc</label>
                     </div>
     `;
     filterEngineContainer.innerHTML += engineFilter
@@ -205,11 +208,28 @@ async function cleanFilters() {
   await renderFilters(vehiclesArray)
 }
 
+async function loadEmptySign(array, div) {
+  if (array.length === 0) {
+    div.innerHTML = `
+        <div class="d-flex m-auto flex-column gap-5 justify-content-center align-items-center emptySign my-5">
+            <div>
+                <i class="fa-solid fa-car-side display-3"></i>
+                <i class="fa-solid fa-car-burst display-1"></i>
+            </div>
+            <p class="index-sub-title">AÚN NO CONTAMOS CON VEHÍCULOS EN ESTA CATEGORÍA</p>
+        </div>
+    `
+  } else {
+    await renderVehicles(array)
+    await renderFilters(array)
+  }
+}
+
 document.addEventListener("DOMContentLoaded", async () => {
   await fetchVehicles(vehiclesJSON)
   await categoryFilter(vehiclesArray)
-  await renderVehicles(vehiclesArray)
-  await renderFilters(vehiclesArray)
+  await loadEmptySign(vehiclesArray, allVehiclesDiv)
+  console.log(vehiclesArray)
 })
 
 hiddeFiltersCheckbox.addEventListener("change", (e) => {

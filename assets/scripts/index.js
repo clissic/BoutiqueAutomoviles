@@ -1,5 +1,8 @@
 const featuredCarsContainer = document.getElementById("featured-cars");
 const featuredBikesContainer = document.getElementById("featured-bikes");
+
+const featuredCarsDiv = document.getElementById("featured-cars-div");
+const featuredBikesDiv = document.getElementById("featured-bikes-div");
 const carsJSON = 'https://raw.githubusercontent.com/clissic/boutiqueAutomovilesJSON/refs/heads/master/vehicles.json'
 
 async function fetchCars(URL) {
@@ -13,13 +16,8 @@ async function fetchCars(URL) {
     const data = await response.json();
     const cars = data;
 
-    function condition(x) {
-      if (x === true) {
-        return "Nuevo"
-      } else {
-        return "Usado"
-      }
-    }
+    let hasFeaturedCars = false;
+    let hasFeaturedBikes = false;
 
     cars.forEach(car => {
       if (car.featured === true && car.category === "autos") {
@@ -44,6 +42,11 @@ async function fetchCars(URL) {
             </a>
         `;
         featuredCarsContainer.innerHTML += carHTML; 
+        hasFeaturedCars = true;
+      }
+
+      if (!hasFeaturedCars) {
+        featuredCarsDiv.innerHTML = ``
       }
 
       if (car.featured === true && car.category === "motos") {
@@ -68,6 +71,11 @@ async function fetchCars(URL) {
             </a>
         `;
         featuredBikesContainer.innerHTML += bikeHTML;
+        hasFeaturedBikes = true;
+      }
+
+      if (!hasFeaturedBikes) {
+        featuredBikesDiv.innerHTML = ``
       }
     }
   )
