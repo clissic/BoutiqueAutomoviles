@@ -78,7 +78,7 @@ async function renderVehicles(vehiclesArrayParam) {
                   <hr class="my-1">
                   <div class="d-flex justify-content-around align-items-center">
                       <p class="m-0 car-status condition-${vehicle.condition}">${vehicle.condition}</p>
-                      <p class="car-price">${vehicle.price}</p>
+                      <p class="car-price">${vehicle.currency} ${vehicle.price}</p>
                   </div>
               </div>
           </a>

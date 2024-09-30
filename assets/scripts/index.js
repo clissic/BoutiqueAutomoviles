@@ -38,7 +38,7 @@ async function fetchCars(URL) {
                     </div>
                     <hr>
                     <div class="d-flex justify-content-center align-items-center">
-                        <p class="car-price">${car.price}</p>
+                        <p class="car-price">${car.currency} ${car.price}</p>
                     </div>
                 </div>
             </a>
@@ -62,7 +62,7 @@ async function fetchCars(URL) {
                     </div>
                     <hr>
                     <div class="d-flex justify-content-center align-items-center">
-                        <p class="car-price">${car.price}</p>
+                        <p class="car-price">${car.currency} ${car.price}</p>
                     </div>
                 </div>
             </a>

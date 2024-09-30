@@ -90,7 +90,7 @@ async function fetchCars(URL) {
                             <i class="fa-solid fa-sack-dollar"></i>
                             <h6>PRECIO:</h6>
                         </div>
-                        <p class="text-end text-md-center text-lg-center h2 text-success">${vehicle.price}</p>
+                        <p class="text-end text-md-center text-lg-center h2 text-success">${vehicle.currency} ${vehicle.price}</p>
                     </div>
                 </div>
                 <div class="mt-4">
