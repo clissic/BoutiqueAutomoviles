@@ -229,7 +229,6 @@ document.addEventListener("DOMContentLoaded", async () => {
   await fetchVehicles(vehiclesJSON)
   await categoryFilter(vehiclesArray)
   await loadEmptySign(vehiclesArray, allVehiclesDiv)
-  console.log(vehiclesArray)
 })
 
 hiddeFiltersCheckbox.addEventListener("change", (e) => {
