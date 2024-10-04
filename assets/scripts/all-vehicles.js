@@ -2,10 +2,17 @@
 const vehiclesCategory = localStorage.getItem("vehicleCategory")
 const navbarAutos = document.getElementById("navbar-autos");
 const navbarMotos = document.getElementById("navbar-motos");
+/* const navbarInicio = document.getElementById("navbar-inicio"); */
 if (vehiclesCategory === "autos") {
   navbarAutos.classList.add("active");
+  navbarMotos.removeAttribute("aria-current");
+/*   navbarInicio.removeAttribute("aria-current"); */
+  navbarAutos.setAttribute("aria-current","page");
 } else if (vehiclesCategory === "motos") {
   navbarMotos.classList.add("active")
+  navbarAutos.removeAttribute("aria-current");
+/*   navbarInicio.removeAttribute("aria-current"); */
+  navbarMotos.setAttribute("aria-current","page");
 }
 
 // ALL VEHICLES DIV

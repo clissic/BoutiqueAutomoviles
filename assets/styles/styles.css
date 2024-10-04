@@ -410,3 +410,23 @@ footer {
 .emptySign {
     height: 60vh;
 }
+
+.seguros-parallax {
+    height: 30vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+    column-gap: 2rem;
+    color: white;
+    text-shadow: black 0px 0px 20px;
+    flex-wrap: wrap;
+}
+
+.ejemplo {
+    height: 200vh;
+}
