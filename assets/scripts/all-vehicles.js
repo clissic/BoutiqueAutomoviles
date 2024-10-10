@@ -8,6 +8,16 @@ if (vehiclesCategory === "autos") {
   navbarMotos.classList.add("active")
 }
 
+if (vehiclesCategory === "autos") {
+  navbarAutos.classList.add("active");
+  navbarMotos.removeAttribute("aria-current");
+  navbarAutos.setAttribute("aria-current","page");
+} else if (vehiclesCategory === "motos") {
+  navbarMotos.classList.add("active")
+  navbarAutos.removeAttribute("aria-current");
+  navbarMotos.setAttribute("aria-current","page");
+}
+
 // ALL VEHICLES DIV
 const allVehiclesDiv = document.getElementById("vehicles-body");
 
