@@ -3,7 +3,7 @@ const featuredBikesContainer = document.getElementById("featured-bikes");
 
 const featuredCarsDiv = document.getElementById("featured-cars-div");
 const featuredBikesDiv = document.getElementById("featured-bikes-div");
-const carsJSON = 'https://raw.githubusercontent.com/clissic/boutiqueAutomovilesJSON/refs/heads/master/vehicles.json'
+const vehiclesJSON = 'https://raw.githubusercontent.com/clissic/boutiqueAutomovilesJSON/refs/heads/master/vehicles.json'
 
 async function fetchCars(URL) {
   try {
@@ -85,5 +85,5 @@ async function fetchCars(URL) {
 }
 
 document.addEventListener("DOMContentLoaded", async () => {
-  await fetchCars(carsJSON)
+  await fetchCars(vehiclesJSON)
 })

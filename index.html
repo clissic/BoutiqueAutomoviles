@@ -35,8 +35,8 @@
                 </li>
                 </ul>
                 <div class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                    <button class="btn btn-secondary"  data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <input id="search-input" class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button id="search-btn" class="btn btn-secondary"  data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </div>
             </div>
         </div>
@@ -45,15 +45,14 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Título del modal</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Resultado de la búsqueda:</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body">
-                ...
+                <div id="modal-body" class="modal-body">
+                    <!-- SE RELLENA CON JS -->
                 </div>
-                <div class="modal-footer">
+                <div class="modal-footer border-top-0">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    <button type="button" class="btn btn-primary">Guardar cambios</button>
                 </div>
             </div>
         </div>
@@ -242,6 +241,17 @@
         </div>
     </div>
 
+    <div class=" container d-flex f-row justify-content-center align-items-center gap-5">
+        <img class="rounded img-fluid w-25 h-25" src="./assets/img/vehicles/0/img1.webp" alt="vehicle-img">
+        <div>
+            <h6>${vehicle.brand} ${vehicle.model}</h6>
+            <p class="m-0">${vehicle.km} KM</p>
+            <p class="m-0">${vehicle.year}</p>
+            <p class="m-0">${vehicle.condition}
+        </div>
+        <a id="${vehicle.id}" onclick="localStorage.setItem('vehicleID', this.id);" class="btn btn-primary" href="./pages/vehicle.html">VER</a>
+    </div>    
+
     <footer class="d-flex flex-wrap justify-content-between align-items-center">
         <div class="col-md-4 mb-0 mt-4 d-flex align-items-center custom-footer-justify">
             <a href="./index.html">
@@ -268,6 +278,7 @@
         </div>
     </footer>
 </body>
+<script src="./assets/scripts/searchEngineIndex.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/bef6e143cb.js" crossorigin="anonymous"></script>
 <script src="./assets/scripts/index.js"></script>
